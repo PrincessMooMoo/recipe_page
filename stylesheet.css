@@ -1,0 +1,117 @@
+/*Stylesheet for Vegan Chocolate Chip Cookie Recipe Website*/
+@font-face{
+    /*https://fonts.google.com/specimen/Galada*/
+    font-family: "Galada";
+    src: url("Galada-Regular.ttf");
+}
+
+html{
+    font-size: 16px;
+}
+body {
+    background-color: white;
+}
+
+a{
+    color: white;
+}
+/*This is the top-most bar of the website*/
+.start {
+    background: linear-gradient(90deg, hsl(315, 100%, 50%), hsl(61, 100%, 59%));
+    height: 100%;
+    margin-top: -20px;
+}
+/*This is where the recipe cards and the image are located*/
+#content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card {
+    background-color: white;
+    width: 33%;
+    border-radius: 10px;
+    padding: 0 20px 10px 5px;
+    margin: -5px 10px 10px 10px;
+    border: 2px solid hsl(315, 8%, 50%);
+}
+.image{
+    height:100%;
+    width: 33%;
+    margin-left: .5rem;
+    margin: -5px 10px 10px 10px;
+}
+
+img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+/*This is where the website ends*/
+.footer {
+    background: linear-gradient(90deg, hsl(315, 100%, 50%), hsl(61, 100%, 59%));
+    height: 100%;
+    margin-top: -7px;
+}
+
+/*Here are some text thingies*/
+h1 {
+    font-family: Galada, sans-serif;
+    font-size: 45px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: hsl(315, 100%, 50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 2rem;
+    color: hsl(315, 100%, 50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+h4 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 10px;
+    text-align: center;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/*Media Queries for different screen sizes*/
+@media screen and (max-width: 992px){
+    #content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .card{
+        width: 100%;
+        margin-left: -10px;
+        border: 0;
+    }
+    .image{
+        width: 100%;
+        margin: 0;
+    }
+    img{
+        border-radius: 0;
+    }
+}
